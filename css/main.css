@@ -1,0 +1,115 @@
+/* @charset 编码 */
+/* @media 媒体查询 */
+/* @import 导入其他样式文件 */
+@charset "UTF-8";
+
+@import "rec.css";
+
+/* 字体图标 */
+@font-face {
+    font-family: "iconfont";
+    src: url("../font/iconfont.eot");
+    src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"),
+        url("../font/iconfont.woff2") format("woff2"),
+        url("../font/iconfont.woff") format("woff"),
+        url("../font/iconfont.ttf") format("truetype"),
+        url("../font/iconfont.svg#iconfont") format("svg");
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* 图片1容器 */
+#firstScreen .firstLeft .img1Box {
+    width: 690px;
+    height: 282px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#firstScreen .firstLeft .pic {
+    width: 520px;
+    position: relative;
+}
+
+#firstScreen .firstLeft .pic .img {
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+}
+
+#firstScreen .firstLeft .pic .img .list {
+    position: absolute;
+    /* transition: left .2s; */
+}
+
+#firstScreen .firstLeft .pic button {
+    width: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
+
+#firstScreen .firstLeft .pic button.leftBtn {
+    left: 0;
+    border-radius: 0 15px 15px 0;
+}
+
+#firstScreen .firstLeft .pic button.rightBtn {
+    right: 0;
+    border-radius: 15px 0 0 15px;
+}
+
+#firstScreen .firstLeft .pic .circle {
+    /* width: 70px; */
+    height: 13px;
+    line-height: 13px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#firstScreen .firstLeft .pic .circle span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0 3px;
+}
+
+#firstScreen .firstLeft .pic .circle span.active {
+    background-color: #ff5000;
+}
+
+
+
+#firstScreen .firstLeft .pic:hover button {
+    display: block;
+}
+
+#firstScreen .firstLeft .pic button:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
